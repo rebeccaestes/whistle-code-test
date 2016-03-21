@@ -1,8 +1,11 @@
 $(document).ready(function(){
 
-	$('button').on('click', function() {
+	$('.submit').on('click', function(e) {
+		// e.preventDefault();
 		$('.form').hide();
 		$('.thanks').show();
+
 	})
+
 
 })
