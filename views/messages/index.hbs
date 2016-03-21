@@ -1,5 +1,13 @@
-{{#each messages}}
-	{{name}}
-	{{phone}}
-	{{email}}
-{{/each}}
+<div class="form">
+	<h1>Contact Us!</h1>
+	<div class="form-intro">
+		<img src="assets/WHOA_.png" alt="boy in goggles" class="whoa-img"/>
+		<p class="instructions">simply fill out the form below and one of our team members will contact you!</p>
+	</div>
+	<form action="/messages" method="post">
+	  <input type="text" name="name" placeholder="name:" required><br />
+	  <input type="text" name="phone" placeholder="phone:" required><br />
+	  <input type="text" name="email" placeholder="email:" required><br />
+		<button type="submit" class="submit"><img src="assets/finger.png" alt="pointing finger"/><span>Send this form</span></button>
+	</form>
+</div>	
