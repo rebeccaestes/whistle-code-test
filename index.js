@@ -4,7 +4,7 @@ var bodyParser = require('body-parser')
 
 var messagesController = require("./controllers/messagesController")
 
-mongoose.connect('mongodb://localhost/messages')
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/messages');
 
 var app = express()
 
