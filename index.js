@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static(__dirname + '/public'))
 
-app.listen(4000, function(){
+app.listen(process.env.PORT || 4000, function(){
   console.log("app listening on port 4000")
 })
 
